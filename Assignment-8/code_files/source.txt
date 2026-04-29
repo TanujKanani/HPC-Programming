@@ -1,0 +1,8 @@
+# MPI hostfile – one entry per gics compute node.
+# "slots" = maximum MPI ranks that can be placed on that node.
+# With our hybrid (1 rank / node, many OMP threads), slots=1 is enough,
+# but setting it high gives flexibility for pure-MPI or multi-rank runs.
+gics1 slots=16
+gics2 slots=16
+gics3 slots=16
+gics4 slots=16
